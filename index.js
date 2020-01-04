@@ -31,3 +31,20 @@ let students = [
 const filtro = students.filter(student => student.score >= 10);
 console.log(filtro);
 
+
+
+// Proximo ejercicio lo que quiero es filtrar los elementos
+// provenientes de el array y que me los filtre para eliminar duplicados
+// recordemos que el metodo filter al igual que map devuelve un array nuevo.
+
+let numbers = [1, 5, 23, 4, 12, 45, 78, 8, 23, 4];
+
+let duplicados = numbers.filter((item, index) => numbers.indexOf(item) === index);
+console.log(duplicados)
+
+
+
+let nombres_duplicados = ['ricardo', 'sofia', 'esteban', 'pablo', 'esteban', 'ricardo'];
+
+let array_new = nombres_duplicados.filter((items, index) => nombres_duplicados.indexOf(items) === index);
+console.log(array_new);
