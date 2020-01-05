@@ -48,3 +48,10 @@ let nombres_duplicados = ['ricardo', 'sofia', 'esteban', 'pablo', 'esteban', 'ri
 
 let array_new = nombres_duplicados.filter((items, index) => nombres_duplicados.indexOf(items) === index);
 console.log(array_new);
+
+
+
+let array = ['uno', 'dos', 'dos', 'tres', 'uno'];
+
+let clear = array.filter((item, index) => array.indexOf(item) === index);
+console.log(clear);
